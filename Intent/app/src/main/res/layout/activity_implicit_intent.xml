@@ -9,6 +9,7 @@
     android:orientation="vertical"
     tools:context=".ImplicitIntentActivity">
 
+
     <TextView
         android:text="@string/implicit_intent"
         android:textAlignment="center"
@@ -29,6 +30,7 @@
         />
 
     <Button
+        android:onClick="handleChangeAvatar"
         android:text="@string/change_avatar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
