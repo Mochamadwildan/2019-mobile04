@@ -8,11 +8,17 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class ExplicitIntentActivity extends AppCompatActivity {
-
+private EditText namaInput;
+private TextView outputText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explicit_intent);
+        namaInput =findViewById(R.id.input_name);
+        outputText = findViewById(R.id.text_output);
     }
-
+public void handleSubmit(View view){
+        String name = namaInput.getText().toString();
+        outputText.setText("Nama saya " + name);
+}
 }
